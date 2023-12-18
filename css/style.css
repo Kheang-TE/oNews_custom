@@ -1,0 +1,102 @@
+:root{
+    --gutter: .8rem;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color:#f9f9f9;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4rem;
+    display: flex;
+}
+.left-side{
+    position: relative;
+    background-image: url('../images/nicole.jpg');
+    background-size: cover;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left-side__header{
+    display: flex;
+    flex: row;
+    align-items: flex-start;
+    padding: calc(var(--gutter)*6) calc(var(--gutter)*3);
+}
+.left-side__header img{
+    width: 10%;
+    display: inline-block;
+    margin-right: calc(var(--gutter)*2)
+}
+.left-side__header h1{
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+    width: 17rem;
+}
+.left-side__description{
+    color: #fff;
+    text-align: right;
+    background-color: rgba(0,0,0,.5);
+    width: 90%;
+    margin: 0 auto;
+    padding: calc(var(--gutter)*5) calc(var(--gutter)*3) calc(var(--gutter)*5) calc(var(--gutter)*8);
+}
+.left-side__description h2{
+    font-size: 2.5rem;
+}
+.left-side__description i{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.left-side__footer{
+    align-self: flex-end;
+    padding: calc(var(--gutter)*1.5) calc(var(--gutter)*3);
+}
+.left-side__footer ul{
+    list-style: none;
+}
+.left-side__footer li{
+    display: inline-block;
+    margin-left: var(--gutter)
+}
+.left-side__footer a,
+.left-side__footer a:visited{
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 10px #000;
+}
+.left-side__footer a:hover,
+.left-side__footer a:focus{
+    text-decoration: underline;
+}
+
+main{
+    position: relative;
+    width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main__title{padding: calc(var(--gutter)*1.5) calc(var(--gutter)*3);}
+
+article {
+        width: 50%;
+        border: solid 0.1rem #eaeaea;
+        background-color: white;
+}
+
+h3{font-size: 1.6rem;
+    padding: calc(var(--gutter)*1.5) calc(var(--gutter)*3)
+}
+
+.article__category{text-transform: uppercase;
+                padding: calc(var(--gutter)*1.5) calc(var(--gutter)*3);
+}
+
+.article__user img{width: 8%;
+}
+

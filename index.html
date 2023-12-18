@@ -6,24 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O'clock Students News</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="left-side">
-        <header>
+        <header class="left-side__header">
+            <img src="./images/onews.svg" alt="Logo O'clock news">
             <h1>O'clock students news</h1>
         </header>
 
-        <div class="description">
+        <div class="left-side__description">
             <h2>
-                Latest news<i>from our students</i>
+                Latest news <i>from our students</i>
             </h2>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, quis amet officia nostrum possimus laudantium nobis iusto magnam corrupti beatae ducimus vitae cumque natus distinctio eaque ad fugit blanditiis quam.
             </p>
         </div>
 
-        <nav>
+        <nav class="left-side__footer">
             <ul>
                 <li><a href="">Plan du site</a></li>
                 <li><a href="">Mentions légales</a></li>
@@ -32,77 +34,81 @@
         </nav>        
     </div>
 
+
     <div class="right-side">
-        <h2>Lastest news</h2>
-        <article>
-            <header class="article__header">
-                <span class="article__category">News</span>
-                <h3>Lorem ipsum dolor sit amet</h3>
-                <p class="article__user">
-                    <img src="./images/icon-john.png" alt="User John Marchill"> John Marchill 
-                    <span class="article__date">le 21 Juillet 2019</span>
+        <h2 class="main__title">Lastest news</h2>
+        <main> 
+            <article>
+                <header class="article__header">
+                    <span class="article__category">News</span>
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p class="article__user">
+                        <img src="./images/icon-john.png" alt="User John Marchill"> John Marchill 
+                        <span class="article__date">le 21 Juillet 2019</span>
+                    </p>
+                </header>
+    
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque suscipit 
+                    nibh quis porttitor. Voilà, je tenais à le dire.
                 </p>
-            </header>
-
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque suscipit 
-                nibh quis porttitor. Voilà, je tenais à le dire.
-            </p>
-            <a href="">Continue reading</a>
-        </article>
-
-        <article>
-            <header class="article__header">
-                <span class="article__category">Team</span>
-                <h3>Le pair programming pour les n00bs</h3>
-                <p class="article__user">
-                    <img src="./images/icon-dar.png" alt="User Paul Larson"> Paul Darson 
-                    <span class="article__date">le 2 Août 2019</span>
+                <a href="">Continue reading</a>
+            </article>
+    
+            <article>
+                <header class="article__header">
+                    <span class="article__category">Team</span>
+                    <h3>Le pair programming pour les n00bs</h3>
+                    <p class="article__user">
+                        <img src="./images/icon-dar.png" alt="User Paul Larson"> Paul Darson 
+                        <span class="article__date">le 2 Août 2019</span>
+                    </p>
+                </header>
+            
+                <p>
+                    Le pair programming pour les dévs, c'est un peu comme certains fromages : 
+                    c'est mieux à deux.
                 </p>
-            </header>
+                <a href="">Continue reading</a>
+            </article>
+    
+            <article>
+                <header class="article__header">
+                    <span class="article__category">Work</span>
+                    <h3>Pourquoi j'aime JS</h3>
+                    <p class="article__user">
+                        <img src="./images/icon-ohz.png" alt="User Bruce Ékoute"> Bruce Ékoute 
+                        <span class="article__date">le 7 Août 2019</span>
+                    </p>
+                </header>
+            
+                <p>
+                    JavaScript est un langage très particulier, c'est indéniable. Je vous propose 
+                    de faire le tour de toutes ces petites choses simples qui lui donnent une saveur si unique.            
+                </p>
+                <a href="">Continue reading</a>
+            </article>
+    
+            <article>
+                <header class="article__header">
+                    <span class="article__category">Team</span>
+                    <h3>La situation de scribe</h3>
+                    <p class="article__user">
+                        <img src="./images/icon-spr.png" alt="User Otis">Otis 
+                        <span class="article__date">le 5 Septembre 2019</span>
+                    </p>
+                </header>
+            
+                <p>
+                    Mais, vous savez, moi je ne crois pas qu'il y ait de bonne ou de mauvaise situation. 
+                    Moi, si je devais résumer ma vie aujourd'hui avec vous, je dirais que c'est d'abord 
+                    des rencontres, des gens qui m'ont tendu la main, peut-être à un moment où je ne pouvais 
+                    pas, où j'étais seul chez moi. Et c'est assez curieux de se dire que les hasards, 
+                    les rencontres forgent une destinée...
+                </p>
+            </article>
+        </main>
         
-            <p>
-                Le pair programming pour les dévs, c'est un peu comme certains fromages : 
-                c'est mieux à deux.
-            </p>
-            <a href="">Continue reading</a>
-        </article>
-
-        <article>
-            <header class="article__header">
-                <span class="article__category">Work</span>
-                <h3>Pourquoi j'aime JS</h3>
-                <p class="article__user">
-                    <img src="./images/icon-ohz.png" alt="User Bruce Ékoute"> Bruce Ékoute 
-                    <span class="article__date">le 7 Août 2019</span>
-                </p>
-            </header>
-        
-            <p>
-                JavaScript est un langage très particulier, c'est indéniable. Je vous propose 
-                de faire le tour de toutes ces petites choses simples qui lui donnent une saveur si unique.            
-            </p>
-            <a href="">Continue reading</a>
-        </article>
-
-        <article>
-            <header class="article__header">
-                <span class="article__category">Team</span>
-                <h3>La situation de scribe</h3>
-                <p class="article__user">
-                    <img src="./images/icon-spr.png" alt="User Otis">Otis 
-                    <span class="article__date">le 5 Septembre 2019</span>
-                </p>
-            </header>
-        
-            <p>
-                Mais, vous savez, moi je ne crois pas qu'il y ait de bonne ou de mauvaise situation. 
-                Moi, si je devais résumer ma vie aujourd'hui avec vous, je dirais que c'est d'abord 
-                des rencontres, des gens qui m'ont tendu la main, peut-être à un moment où je ne pouvais 
-                pas, où j'étais seul chez moi. Et c'est assez curieux de se dire que les hasards, 
-                les rencontres forgent une destinée...
-            </p>
-        </article>
     </div>
 </body>
 </html>
