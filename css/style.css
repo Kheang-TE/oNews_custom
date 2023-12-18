@@ -11,10 +11,10 @@ body{
     display: flex;
 }
 .left-side{
-    position: relative;
+    position: fixed;
     background-image: url('../images/nicole.jpg');
     background-size: cover;
-    width: 50vw;
+    width: 50%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -67,17 +67,23 @@ body{
     color: #fff;
     text-decoration: none;
     padding: var(--gutter);
+    text-shadow: #000 0 0 var(--gutter);
 }
 .left-side_navlink:hover{
     background-color: rgba(0,0,0,.75);
     transition: background-color 0.3s linear;
 }
 
-main{
+.right-side{
+    width: 50%;
+    height: 100vw;
     position: relative;
-    width: 50vw;
+    left: 50%;
+}
+main{
     display: flex;
     flex-wrap: wrap;
+    /* overflow-y: scroll; */
 }
 
 .main__title{
