@@ -63,15 +63,14 @@ body{
     display: inline-block;
     margin-left: var(--gutter)
 }
-.left-side__footer a,
-.left-side__footer a:visited{
+.left-side_navlink{
     color: #fff;
     text-decoration: none;
-    text-shadow: 0 0 10px #000;
+    padding: var(--gutter);
 }
-.left-side__footer a:hover,
-.left-side__footer a:focus{
-    text-decoration: underline;
+.left-side_navlink:hover{
+    background-color: rgba(0,0,0,.75);
+    transition: background-color 0.3s linear;
 }
 
 main{
@@ -81,22 +80,74 @@ main{
     flex-wrap: wrap;
 }
 
-.main__title{padding: calc(var(--gutter)*1.5) calc(var(--gutter)*3);}
+.main__title{
+    padding: calc(var(--gutter)*1.5) calc(var(--gutter)*3);
+    font-size: 2.4rem;
+}
 
 article {
-        width: 50%;
-        border: solid 0.1rem #eaeaea;
-        background-color: white;
+    width: 50%;
+    border: solid 0.1rem #eaeaea;
+    background-color: white;
+    padding: calc(var(--gutter)*3)
 }
 
-h3{font-size: 1.6rem;
-    padding: calc(var(--gutter)*1.5) calc(var(--gutter)*3)
+.article__header h3{
+    font-size: 2.4rem;
+    margin-bottom: calc(var(--gutter)*3);
 }
 
-.article__category{text-transform: uppercase;
-                padding: calc(var(--gutter)*1.5) calc(var(--gutter)*3);
+.article__category{
+    text-transform: uppercase;
+    padding: var(--gutter) calc(var(--gutter)*1.5);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: calc(var(--gutter)*0.5);
+    margin-bottom: calc(var(--gutter)*3);
+    display: inline-flex;
 }
 
-.article__user img{width: 8%;
+.article__category--team{
+    background-color: #DC5E53;
+}
+
+.article__category--news{
+    background-color: #98DC62;
+}
+
+.article__category--work{
+    background-color: #0766F0;
+}
+
+.article__user{
+    display: flex;
+    font-weight: 700;
+    font-size: 1.2rem;
+    align-items: center;
+}
+.article__user img{
+    width: 12%;
+    margin-right: calc(var(--gutter)*2);
+}
+
+.article__date{
+    font-weight: 400;
+    color: #b0adac;
+    padding-left: var(--gutter);
+
+}
+
+.article__excerpt{
+    margin: calc(var(--gutter)*3) 0;
+}
+
+.article__link{
+    color: #007bff;
+    font-weight: 700;
+}
+
+.article__link:hover{
+    color: #0056b3;
 }
 
