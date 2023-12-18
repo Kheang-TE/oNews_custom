@@ -10,11 +10,13 @@ body{
     font-size: 1.4rem;
     display: flex;
 }
+
+/* LEFT SIDE */
 .left-side{
-    position: relative;
+    position: fixed;
     background-image: url('../images/nicole.jpg');
     background-size: cover;
-    width: 50vw;
+    width: 50%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -67,36 +69,40 @@ body{
     color: #fff;
     text-decoration: none;
     padding: var(--gutter);
+    text-shadow: #000 0 0 var(--gutter);
 }
 .left-side_navlink:hover{
     background-color: rgba(0,0,0,.75);
     transition: background-color 0.3s linear;
 }
 
-main{
+/* RIGHT SIDE */
+.right-side{
+    width: 50%;
+    height: 100vw;
     position: relative;
-    width: 50vw;
+    left: 50%;
+}
+.article__container{
     display: flex;
     flex-wrap: wrap;
 }
-
 .main__title{
     padding: calc(var(--gutter)*1.5) calc(var(--gutter)*3);
     font-size: 2.4rem;
 }
 
+/* ARTICLE */
 article {
     width: 50%;
     border: solid 0.1rem #eaeaea;
     background-color: white;
     padding: calc(var(--gutter)*3)
 }
-
 .article__header h3{
     font-size: 2.4rem;
     margin-bottom: calc(var(--gutter)*3);
 }
-
 .article__category{
     text-transform: uppercase;
     padding: var(--gutter) calc(var(--gutter)*1.5);
@@ -107,19 +113,15 @@ article {
     margin-bottom: calc(var(--gutter)*3);
     display: inline-flex;
 }
-
 .article__category--team{
     background-color: #DC5E53;
 }
-
 .article__category--news{
     background-color: #98DC62;
 }
-
 .article__category--work{
     background-color: #0766F0;
 }
-
 .article__user{
     display: flex;
     font-weight: 700;
@@ -130,24 +132,19 @@ article {
     width: 12%;
     margin-right: calc(var(--gutter)*2);
 }
-
 .article__date{
     font-weight: 400;
     color: #b0adac;
     padding-left: var(--gutter);
 
 }
-
 .article__excerpt{
     margin: calc(var(--gutter)*3) 0;
 }
-
 .article__link{
     color: #007bff;
     font-weight: 700;
 }
-
 .article__link:hover{
     color: #0056b3;
 }
-
