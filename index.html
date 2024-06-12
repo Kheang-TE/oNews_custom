@@ -10,33 +10,40 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- Partie de gauche -->
     <div class="left-side">
+        <!-- Logo en haut à gauche -->
         <header class="left-side__header">
             <img src="./images/onews.svg" alt="Logo O'clock news">
             <h1>O'clock students news</h1>
         </header>
 
+        <!-- Encart du milieu -->
         <div class="left-side__description">
-            <h2>
-                Latest news <i>from our students</i>
-            </h2>
+            <h2>Latest news <i>from our students</i></h2>
             <p class="left-side__excerpt">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, quis amet officia nostrum possimus laudantium nobis iusto magnam corrupti beatae ducimus vitae cumque natus distinctio eaque ad fugit blanditiis quam.
             </p>
         </div>
 
+        <!-- Navigation en bas à droite -->
         <nav class="left-side__footer">
             <ul>
                 <li><a href="" class="left-side_navlink">Plan du site</a></li>
                 <li><a href="" class="left-side_navlink">Mentions légales</a></li>
                 <li><a href="" class="left-side_navlink">Contact</a></li>
             </ul>
-        </nav>        
+        </nav>
     </div>
 
+    <!-- Partie de droite -->
     <div class="right-side">
+
         <h2 class="main__title">Lastest news</h2>
+
+        <!-- Conteneur des articles -->
         <main class="article__container"> 
+
             <article class="article">
                 <header class="article__header">
                     <span class="article__category article__category--news">News</span>
@@ -52,6 +59,7 @@
                 </p>
                 <a href="" class="article__link">Continue reading</a>
             </article>
+
             <article class="article">
                 <header class="article__header">
                     <span class="article__category article__category--team">Team</span>
@@ -67,6 +75,7 @@
                 </p>
                 <a href="" class="article__link">Continue reading</a>
             </article>
+
             <article class="article">
                 <header class="article__header">
                     <span class="article__category article__category--work">Work</span>
@@ -82,6 +91,7 @@
                 </p>
                 <a href="" class="article__link">Continue reading</a>
             </article>
+
             <article class="article">
                 <header class="article__header">
                     <span class="article__category article__category--team">Team</span>
@@ -100,6 +110,7 @@
                 </p>
                 <a href="" class="article__link">Continue reading</a>
             </article>
+
             <article class="article">
                 <header class="article__header">
                     <span class="article__category article__category--work">Work</span>
@@ -115,6 +126,7 @@
                 </p>
                 <a href="" class="article__link">Continue reading</a>
             </article>
+
             <article class="article">
                 <header class="article__header">
                     <span class="article__category article__category--team">Team</span>
@@ -133,7 +145,20 @@
                 </p>
                 <a href="" class="article__link">Continue reading</a>
             </article>
+
         </main> 
+
     </div>
+
+    <!-- Newsletter -->
+    <aside class="newsletter">
+        <button class="newsletter__close btn" aria-label="Fermer" type="button">&Cross;</button>
+        <h2 class="newsletter__title">Inscription à la newsletter</h2>
+        <form>
+          <input class="newsletter__field" type="email" required id="subscriber-email" placeholder="user@email.com" aria-label="Votre email">
+          <button class="btn" type="submit">Valider</button>
+        </form>
+      </aside>
+
 </body>
 </html>
