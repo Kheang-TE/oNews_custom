@@ -26,9 +26,20 @@
             </p>
         </div>
 
+        <!-- Newsletter -->
+        <aside class="newsletter">
+            <button class="newsletter__close btn" aria-label="Fermer" type="button">&Cross;</button>
+            <h2 class="newsletter__title">Inscription à la newsletter</h2>
+            <form>
+                <input class="newsletter__field" type="email" required id="subscriber-email" placeholder="user@email.com" aria-label="Votre email">
+                <button class="btn" type="submit">Valider</button>
+            </form>
+        </aside>
+
         <!-- Navigation en bas à droite -->
         <nav class="left-side__footer">
             <ul>
+                <li><a href="" class="left-side_navlink" id="newsletter-btn">Newsletter</a></li>
                 <li><a href="" class="left-side_navlink">Plan du site</a></li>
                 <li><a href="" class="left-side_navlink">Mentions légales</a></li>
                 <li><a href="" class="left-side_navlink">Contact</a></li>
@@ -150,15 +161,7 @@
 
     </div>
 
-    <!-- Newsletter -->
-    <aside class="newsletter">
-        <button class="newsletter__close btn" aria-label="Fermer" type="button">&Cross;</button>
-        <h2 class="newsletter__title">Inscription à la newsletter</h2>
-        <form>
-          <input class="newsletter__field" type="email" required id="subscriber-email" placeholder="user@email.com" aria-label="Votre email">
-          <button class="btn" type="submit">Valider</button>
-        </form>
-      </aside>
-
+    <script src="./js/newsletter.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

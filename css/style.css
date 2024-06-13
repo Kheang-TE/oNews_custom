@@ -157,7 +157,7 @@ article {
     bottom:10vh;
     background-color: #fff;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    border: var(--border-normal);
+    border: 1px solid rgba(0, 0, 0, .2);
     padding: 2rem;
     width: 25em;
     max-width: 100%;
@@ -174,7 +174,7 @@ article {
 }
 
 .newsletter__field {
-    border: var(--border-normal);
+    border: 1px solid rgba(0, 0, 0, .2);
     padding: 0.25rem;
     border-radius: 5px;
 }
