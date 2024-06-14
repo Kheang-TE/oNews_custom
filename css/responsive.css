@@ -1,0 +1,47 @@
+@media (max-width: 1200px){
+    article{
+        width: 100%;
+    }
+}
+@media (max-width: 992px) {
+    body{
+      flex-direction: column;
+    }
+    .left-side, .right-side {
+        width: 100%;
+        left: 0;
+        position: relative;
+        height: auto;
+    }
+    .left-side{
+        background-position: center;
+        padding-bottom: calc(var(--gutter)*6);
+    }
+    .left-side button{
+        display: block;
+    }
+    .left-side__footer{
+        display: none;
+    }
+    .article__container{
+        justify-content: space-evenly;
+    }
+    article{
+        width: calc(50% - 4rem);
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    article{
+        width: calc(100% - 4rem);
+    }
+    .newsletter{
+        width: calc(100% - 4rem);
+        left: 2rem;
+        bottom: 2rem;
+    }
+    .newsletter__field{
+        width: 75%;
+    }
+}

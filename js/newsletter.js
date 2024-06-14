@@ -46,17 +46,11 @@ const newsletter = {
     le nom de la fonction sans le mot-clé `function`
   */
   addEvents() {
-    console.log('addEvents');
-    console.log(document.getElementById('newsletter-btn'));
-
-    // clic sur l'élément de menu
-    document.getElementById('newsletter-btn')
-      .addEventListener(
-        'click',
-        newsletter.show,
-        { once: true } // l'écouteur est actif seulement une fois
-        // note : ici c'est juste pour un rappel
-      );
+    // clic sur les boutons d'inscription à la newsletter
+    const allBtn = document.querySelectorAll('.newsletter-btn');
+    allBtn.forEach((btn) => {
+      btn.addEventListener('click', newsletter.show);
+    });
 
     // clic sur le bouton de fermeture du bloc
     document.querySelector('.newsletter__close')
