@@ -23,6 +23,9 @@
     .left-side__footer{
         display: none;
     }
+    .main__title{
+        text-align: center;
+    }
     .article__container{
         justify-content: space-evenly;
     }
